@@ -26,6 +26,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -137,7 +138,7 @@ public class ComercianteController {
 	
 	@GetMapping("/listardto")
 	//@RolesAllowed({"Admin", "AuxRegistro"})
-	//@Secured({"ROL_Admin", "AuxRegistro"})
+	//@Secured({"Admin", "AuxRegistro"})
 	public List<ComercianteDTO> listDto(@PageableDefault(page=0, size=5)  Pageable pageable) {
 
 		System.out.println("entro a listar comerciantes");

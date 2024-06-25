@@ -33,16 +33,8 @@ public class Municipios {
 	private Departamentos departamento;
 
 	
+	public Municipios() {}
 	
-	
-	public Municipios(Integer id_municipio, String nombre_municipio, boolean estado, Departamentos departamento) {
-		super();
-		this.id_municipio = id_municipio;
-		this.nombre_municipio = nombre_municipio;
-		this.estado = estado;
-		this.departamento = departamento;
-	}
-
 	public Integer getId_municipio() {
 		return id_municipio;
 	}
